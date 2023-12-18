@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Salix</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- bootstrap icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-    <!-- custom fonts - Bitter -->
+    <!-- custom fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- custom css -->
-    <link href="css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="public/css/custom.min.css" />
+    <title>Salix</title>
   </head>
   <body>
     <!-- navigation -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-light p-3" style="font-weight: 400; letter-spacing: 1px;">
+      <nav
+        class="navbar navbar-expand-lg p-3"
+        style="font-weight: 400; letter-spacing: 1px"
+      >
         <div class="container">
           <!-- logo -->
           <a href="#" class="navbar-brand">Salix</a>
@@ -69,39 +71,59 @@
           </div>
         </div>
       </nav>
+
+      <!-- hero section-->
+      <section>
+        <div
+          class="text-center bg-image d-flex flex-column justify-content-center align-items-center"
+          style="
+            background-image: url('images/clinic-lobby.jpg');
+            height: 65vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        >
+          <div
+            class="text-white p-5"
+            style="
+              background-color: rgba(15, 158, 168, 0.8);
+              border-radius: 10px;
+            "
+          >
+            <h1 class="mb-3">Salix</h1>
+            <h4 class="mb-3">Rehabilitační Klinika</h4>
+          </div>
+        </div>
+      </section>
     </header>
 
-    <!-- hero section -->
-    <section class="container-fluid">
-      <div class="row position-relative d-flex align-items-center">
-        <img
-          class="header-img p-0"
-          src="images/clinic-lobby.jpg"
-          alt="Photo of a waiting lobby"
-        />
-        <div class="position-absolute text-center">
-          <p class="hero-bg hero-text">Rehabilitační klinika Salix</p>
-        </div>
-      </div>
-    </section>
-
     <!-- kontakty -->
-    <section class="bg-primary text-white lead">
+    <section class="bg-primary text-white">
       <div class="container text-center p-4">
-        <div class="row align-items-center" style="font-weight: 400; letter-spacing: 1px;">
-          <div class="col">email@nasemail.com</div>
-          <div class="col">+420 123 456 789</div>
-          <div class="col">Třída Míru 123, Pardubice</div>
+        <div
+          class="row align-items-center"
+          style="font-weight: 400; letter-spacing: 1px"
+        >
+          <div class="col-12 col-md mb-2">
+            <i class="bi bi-envelope"></i> email@nasemail.com
+          </div>
+          <div class="col-12 col-md mb-2">
+            <i class="bi bi-telephone"></i> +420 123 456 789
+          </div>
+          <div class="col-12 col-md">
+            <i class="bi bi-geo-alt"></i> Třída Míru 123, Pardubice
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- kdo jsme -->
-    <section id="kdo-jsme" class="p-5">
+    <!-- o nas -->
+    <section id="o-nas" class="p-5">
       <div class="container">
         <div class="row justify-content-center alight-items-center m-2">
           <div class="col-md">
-            <h2 class="pb-4">O nás</h2>
+            <h2 class="pb-4 text-center">O nás</h2>
             <p style="line-height: 1.7">
               Jsme klinika specializující se na komplexní péči o dětské zdraví.
               Nabízíme fyzioterapii, ergoterapii a logopedii s cílem podporovat
@@ -109,7 +131,9 @@
               individuálně s láskou a odborností. Jsme hrdí, že můžeme být vaším
               partnerem na cestě k zdraví a pohodě vašich dětí.
             </p>
-            <a href="#" class="btn btn-primary mt-3">Kontakt</a>
+            <div class="d-flex justify-content-center">
+              <a href="#" class="btn btn-primary text-white mt-3">Kontakt</a>
+            </div>
           </div>
           <div class="col-md mr-4 mb-4 mb-md-0">
             <img
@@ -143,7 +167,9 @@
                 </p>
               </div>
               <div class="m-3 text-center">
-                <a href="#" class="btn btn-primary">Více informací</a>
+                <a href="#" class="btn btn-primary text-white"
+                  >Více informací</a
+                >
               </div>
             </div>
           </div>
@@ -164,7 +190,9 @@
                 </p>
               </div>
               <div class="m-3 text-center">
-                <a href="#" class="btn btn-primary">Více informací</a>
+                <a href="#" class="btn btn-primary text-white"
+                  >Více informací</a
+                >
               </div>
             </div>
           </div>
@@ -185,7 +213,9 @@
                 </p>
               </div>
               <div class="m-3 text-center">
-                <a href="#" class="btn btn-primary">Více informací</a>
+                <a href="#" class="btn btn-primary text-white"
+                  >Více informací</a
+                >
               </div>
             </div>
           </div>
@@ -225,6 +255,15 @@
                 <span class="fw-bold">Kde nás najdete:</span> Třída Míru 123,
                 Pardubice
               </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Sociální sítě:</span>
+                <a href="#" class="nav-link">
+                  <i class="bi bi-instagram"> Instagram</i>
+                  <a href="#" class="nav-link"
+                    ><i class="bi bi-facebook"> Facebook</i></a
+                  >
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -232,17 +271,22 @@
     </section>
 
     <!-- footer -->
-    <footer class="py-3 my-4">
+    <footer class="py-3">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Aktuality</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Kontakty</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Facebook</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Instagram</a></li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Aktuality</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Kontakty</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Instagram</a>
+        </li>
       </ul>
       <p class="text-center text-muted">© 2024 Salix</p>
     </footer>
-
-    <!-- javascript -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
