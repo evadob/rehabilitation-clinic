@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Salix</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <!-- custom fonts - Bitter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,12 +22,11 @@
   <body>
     <!-- navigation -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-light py-3">
+      <nav class="navbar navbar-expand-lg bg-light p-3" style="font-weight: 400; letter-spacing: 1px;">
         <div class="container">
           <!-- logo -->
-          <a href="#" class="navbar-brand"
-            >Salix</a
-          >
+          <a href="#" class="navbar-brand">Salix</a>
+          <i class="bi bi-heart-pulse"></i>
           <!-- toggle button -->
           <button
             class="navbar-toggler"
@@ -51,11 +54,194 @@
               <li class="nav-item">
                 <a href="#" class="nav-link">Kontakt</a>
               </li>
+              <!-- social icons -->
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
+    <!-- hero section -->
+    <section class="container-fluid">
+      <div class="row position-relative d-flex align-items-center">
+        <img
+          class="header-img p-0"
+          src="images/clinic-lobby.jpg"
+          alt="Photo of a waiting lobby"
+        />
+        <div class="position-absolute text-center">
+          <p class="hero-bg hero-text">Rehabilitační klinika Salix</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- kontakty -->
+    <section class="bg-primary text-white lead">
+      <div class="container text-center p-4">
+        <div class="row align-items-center" style="font-weight: 400; letter-spacing: 1px;">
+          <div class="col">email@nasemail.com</div>
+          <div class="col">+420 123 456 789</div>
+          <div class="col">Třída Míru 123, Pardubice</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- kdo jsme -->
+    <section id="kdo-jsme" class="p-5">
+      <div class="container">
+        <div class="row justify-content-center alight-items-center m-2">
+          <div class="col-md">
+            <h2 class="pb-4">O nás</h2>
+            <p style="line-height: 1.7">
+              Jsme klinika specializující se na komplexní péči o dětské zdraví.
+              Nabízíme fyzioterapii, ergoterapii a logopedii s cílem podporovat
+              optimální rozvoj, přistupujeme k potřebám každého dítěte
+              individuálně s láskou a odborností. Jsme hrdí, že můžeme být vaším
+              partnerem na cestě k zdraví a pohodě vašich dětí.
+            </p>
+            <a href="#" class="btn btn-primary mt-3">Kontakt</a>
+          </div>
+          <div class="col-md mr-4 mb-4 mb-md-0">
+            <img
+              class="img-fluid d-none d-md-block"
+              src="images/kids-hands.jpg"
+              alt="Picture of child's hands"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- terapie rozcestník -->
+    <section class="bg-primary p-5">
+      <div class="container">
+        <h2 class="text-center text-white mb-4">Naše služby</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- card 1 -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="img-fluid rounded-circle m-4 img-thumbnail"
+                src="images/fyzio.jpg"
+                alt="Kid exercising"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Fyzioterapie</h5>
+                <p class="card-text">
+                  Naše fyzioterapie je navržena tak, aby podporovala pohyb, sílu
+                  a celkové zdraví našich dětských klientů.
+                </p>
+              </div>
+              <div class="m-3 text-center">
+                <a href="#" class="btn btn-primary">Více informací</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="img-fluid rounded-circle m-4 img-thumbnail"
+                src="images/ergo-tower.jpg"
+                alt="Kids hands building a duplo tower"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Ergoterapie</h5>
+                <p class="card-text">
+                  Poskytujeme strategie a dovednosti pro zlepšení motorických
+                  funkcí, soustředění a schopnosti sebeobsluhy.
+                </p>
+              </div>
+              <div class="m-3 text-center">
+                <a href="#" class="btn btn-primary">Více informací</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                class="img-fluid rounded-circle m-4 img-thumbnail"
+                src="images/logo.jpg"
+                alt="Kid learning"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Logopedie</h5>
+                <p class="card-text">
+                  Jsme zde, abychom pomohli každému dítěti dosáhnout plného
+                  potenciálu v oblasti komunikačních schopností.
+                </p>
+              </div>
+              <div class="m-3 text-center">
+                <a href="#" class="btn btn-primary">Více informací</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- kde nás najdete -->
+    <section id="kde" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center m-2">
+          <!-- mapa -->
+          <div class="col-md-6 mr-4 mb-4 mb-md-0">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.6356829759184!2d15.77144131265347!3d50.0369220713973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dcc94b922296f%3A0xb398a40fa4251acb!2st%C5%99.%20M%C3%ADru%2C%20530%2002%20Pardubice%20I!5e0!3m2!1sen!2scz!4v1702915001799!5m2!1sen!2scz"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- kontaktní informace -->
+          <div class="col-md-6">
+            <h2 class="text-center">Kontakt</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Telefon:</span> +420 123 456 789
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Kontaktní e-mail:</span>
+                email@nasemail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Kde nás najdete:</span> Třída Míru 123,
+                Pardubice
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Aktuality</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Kontakty</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Facebook</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Instagram</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2024 Salix</p>
+    </footer>
+
     <!-- javascript -->
     <script src="js/bootstrap.min.js"></script>
   </body>
